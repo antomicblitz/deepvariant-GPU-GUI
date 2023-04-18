@@ -70,7 +70,8 @@ DeepVariant is trained on different datasets for different sequencing technologi
 **HYBRID_PACBIO_ILLUMINA**: Hybrid PacBio-Illumina - This option is for data generated using a combination of both PacBio and Illumina sequencing platforms. The model is trained on datasets that contain a mix of long reads from PacBio and short reads from Illumina.
 
 ## Number of Shards
-This setting specifies the number of CPUs to use for DeepVariant. By default, it will read use all available cores. Feel free to change it.
+Shards: In the context of the DeepVariant pipeline, shards refer to the division of the input data (in this case, the genome data) into smaller, more manageable pieces. By sharding the data, each piece is run independently and in parallel, which can significantly speed up the overall analysis. The number of shards to use depends on the size of your input data and the computational resources available. Default is number of shards = number of CPUs.
+
 
 ## Regions
 Here you can specify which chromosome(s) or regions to perform the variant calling. Here are examples of valid arguments (remember to use without parantheses):
