@@ -6,18 +6,6 @@ import os
 import tkinter as tk
 from tkinter import filedialog
 import subprocess
-from urllib.request import urlretrieve
-from tqdm import tqdm
-
-class TqdmUpTo(tqdm):
-    def update_to(self, b=1, bsize=1, tsize=None):
-        if tsize is not None:
-            self.total = tsize
-        self.update(b * bsize - self.n)
-
-def download_with_progress_bar(url, output_path):
-    with TqdmUpTo(unit='B', unit_scale=True, miniters=1, desc=url.split('/')[-1]) as t:
-        urlretrieve(url, filename=output_path, reporthook=t.update_to)
 
 def browse_input_directory():
     folder = filedialog.askdirectory()
@@ -29,10 +17,10 @@ def browse_output_directory():
 
 def download_reference_files():
     index_file_url = "https://drive.google.com/uc?export=download&id=1u3GLKR6Y31_X2hW7i-VWytBHNp1urYH0"
-    dict_file_url = "https://drive.google.com/uc?export=download&id=1u3GLKR6Y31_X2hW7i-VWytBHNp1urYH0"
+    fasta_file_url = "https://drive.google.com/uc?export=download&id=1u3GLKR6Y31_X2hW7i-VWytBHNp1urYH0"
 
     index_file_path = os.path.join("Index Files", "hg38.fa")
-    dict_file_path = os.path.join("Index Files", "hg38.fa.fai")
+    fasta_file_path = os.path.join("Index Files", "hg38.fa.fai")
 
     if not os.path.exists("Index Files"):
         os.makedirs("Index Files")
@@ -45,11 +33,10 @@ def download_reference_files():
 
     download_button.config(state="disabled", text="Files Downloaded")
 
-import os
-
 def run_bash_script():
     input_directory = input_directory_var.get()
     output_directory = output_directory_var.get()
+    ref_directory = ref_directory_var.get()
     model_type = model_type_var.get()
     num_shards = num_shards_var.get()
     regions = regions_var.get()
