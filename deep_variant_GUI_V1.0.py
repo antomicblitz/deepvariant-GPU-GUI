@@ -1,7 +1,7 @@
 # google-deepvariant-GUI V1.0
 # Script created by Antonio Lamb using assistance from ChatGPT 4.0
 # Note, you need to have Docker, Windows Subsystem for Linux, and Ubuntu installed.
-# Install python3, pip, tkinter, tqdm from ubuntu BASH using sudo apt-get install
+# Install python3, tkinter, tqdm from ubuntu BASH using sudo apt-get install
 import os
 import tkinter as tk
 from tkinter import filedialog
