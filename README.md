@@ -1,5 +1,5 @@
 # google-deepvariant-GPU-GUI V1.0
-This application is a work in progress, but will generate a user-friendly GUI for setting up and running a GPU version of Google's DeepVariant with GPU capabilities in a Docker container. Unfortunately, this only currently works on x86_64 based computers with a compatible GPU (i.e. NVIDIA)
+This application is a work in progress, but will generate a user-friendly GUI for setting up and running a GPU version of Google's DeepVariant 1.50 with GPU capabilities in a Docker container. Unfortunately, this only currently works on x86_64 based computers with a compatible GPU (i.e. NVIDIA)
 
 For further information, check here: Refer to https://github.com/google/deepvariant 
 # Requirements
