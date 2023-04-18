@@ -1,7 +1,11 @@
 ## Requirements
 
-- Python 3.6 or higher
-- Docker
+- Python 3.6 or higher with the following standard library modules:
+   -tkinter
+   -subprocess
+   -os
+= Docker: The script uses Docker to run the DeepVariant GPU-enabled container.
+- GPU drivers and libraries: Since the script is using the GPU-enabled version of DeepVariant, users must have compatible GPU drivers and libraries (such as NVIDIA CUDA and cuDNN) installed on their systems. You can find these from NVIDIA
 
 ## Installation
 
