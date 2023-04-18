@@ -35,8 +35,7 @@ Once it is downloaded, use the cd command to enter into the google-deep-variant-
 
 run the GUI using this command from the Ubuntu Bash Terminal: python deep_variant_GUI.py
 
-**This has only been tested on Windows 11, but should also work on any Mac or Linux machine with the proper environment. You will need the following installed: Docker for Windows and Windows Subsystem for Linux 2 (WSL2).
-Be aware that the uncompressed reference genome file (in this case hg38.fa) and index file (hg38.fai) should be in the Index_Files folder within the working directory. If you don't have them already, the tool has the option to download them from UCSC, but you should make sure that they are same version you used for your alignment. If not, you can use "samtools faidx [yourfasta.fa]" to make your index file. If you used a different reference file, you need to make your own index or the script will fail. Just make sure they are both in the Index_Files directory.**
+**This has only been tested on Windows 11, but should also work on any Mac or Linux machine with the proper environment. You will need the following installed: Docker for Windows and Windows Subsystem for Linux 2 (WSL2).**
 
 # Inputs
 Before you start running, you need to have the following input files:
@@ -46,6 +45,9 @@ A reference genome in FASTA format and its corresponding index file (.fai).
 An aligned reads file in BAM format and its corresponding index file (.bai). You get this by aligning the reads from a sequencing instrument, using an aligner like BWA for example.
 
 These files should be together in a directory that is specified in the GUI. **Make sure the .fa and .fai files have the same name.**
+
+Be aware that the uncompressed reference genome file (in this case hg38.fa) and index file (hg38.fai) should be in the Index_Files folder within the working directory. If you don't have them already, the tool has the option to download them from UCSC, but you should make sure that they are same version you used for your alignment. If not, you can use "samtools faidx [yourfasta.fa]" to make your index file. If you used a different reference file, you need to make your own index or the script will fail. Just make sure they are both in the Index_Files directory.
+
 
 # Outputs
 VCF and gVCF variant calling file ready for filtering and downstream processing. You can specify the output directory.
