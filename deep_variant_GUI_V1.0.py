@@ -1,5 +1,5 @@
+# google-deepvariant-GUI V1.0
 # Script created by Antonio Lamb using assistance from ChatGPT 4.0
-# To do list: Fix downloads.
 # Note, you need to have Docker, Windows Subsystem for Linux, and Ubuntu installed.
 # Install python3, pip, tkinter, tqdm from ubuntu BASH using sudo apt-get install
 import os
@@ -58,7 +58,7 @@ sudo docker run \
     subprocess.run(["bash", "bash_script.sh"])
 
 root = tk.Tk()
-root.title("DeepVariant GUI")
+root.title("DeepVariant GUI by Antonio Lamb")
 
 input_bam_var = tk.StringVar()
 output_directory_var = tk.StringVar()
