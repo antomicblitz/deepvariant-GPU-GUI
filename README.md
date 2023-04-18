@@ -1,19 +1,20 @@
-# google-deepvariant-GUI 
-This application is a work in progress, but will generate a user-friendly GUI for setting up and running a GPU version of Google's DeepVariant with GPU capabilities in a Docker container.
+# google-deepvariant-GUI V1.0
+This application is a work in progress, but will generate a user-friendly GUI for setting up and running a GPU version of Google's DeepVariant with GPU capabilities in a Docker container. Unfortunately, this only currently works on x86_64 based computers with a compatible GPU (i.e. NVIDIA)
+
 For further information, check here: Refer to https://github.com/google/deepvariant 
 # Requirements
-## windows
+## Windows
 In windows, you need to install Docker and WSL2, and Ubuntu for WSL2
 
 From Ubuntu, you need to run the following in a BASH terminal to install all dependencies:
-apt-get install python pip tkinter tqdm samtools
+apt-get install python pip tkinter tqdm
 
 once these are installed, download this folder directly (or use the git command "git pull google-deepvariant-GUI) to download the folder.
 
 Tip: If you are running WSL2, make sure that you give enough RAM or the process might fail. By defauly, WSL2 only allocates 50% of the RAM. Follow this guide:https://fizzylogic.nl/2023/01/05/how-to-configure-memory-limits-in-wsl2#:~:text=Memory%20usage%20in%20WSL2&text=Memory%20is%20limited%20to%20half,and%20all%20CPU%2FGPU%20cores.
 
 ## Mac or Linux
-As long as the python environment is set up correctly and you have installed all the dependencies, it should work.
+As long as the python environment to run the script is set up correctly and you have installed all the dependencies, it should work. Make sure docker is installed.
 
 # Running the GUI
 
