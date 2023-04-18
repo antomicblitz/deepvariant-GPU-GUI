@@ -1,0 +1,18 @@
+## Requirements
+
+- Python 3.6 or higher
+- Docker
+
+## Installation
+
+1. Install Python 3.6 or higher if you don't have it installed. You can download it from the official Python website: https://www.python.org/downloads/
+
+2. Install Docker following the official installation guide for your operating system:
+   - Windows: https://docs.docker.com/desktop/windows/install/
+   - macOS: https://docs.docker.com/desktop/mac/install/
+   - Linux: https://docs.docker.com/engine/install/
+
+3. Clone the repository and navigate to the directory containing the script.
+
+4. Run the script using the following command:
+python3 deep_variant_GUI_V1.0.py
