@@ -1,5 +1,17 @@
 # google-deepvariant-GPU-GUI V1.0
-This python script will generate a user-friendly GUI for setting up and running a GPU version of Google's DeepVariant 1.50 with GPU capabilities in a Docker container. Unfortunately, this only currently works on x86_64 based computers with a compatible GPU (i.e. NVIDIA)
+The script provides a graphical user interface (GUI) to run the DeepVariant pipeline using the GPU-enabled Docker container. The use of docker greatly simplifies the installation of dependencies and makes it possible to run the pipelines in just a few clocks. The GUI simplifies the process of specifying input files, output directories, reference genomes, and other options for running DeepVariant, making it more accessible to users without extensive command-line experience. 
+
+Here's a summary of the script's functionality:
+
+The script creates a tkinter-based GUI with input fields and browse buttons for selecting the required directories and files. These include the input BAM file, output directory, reference genome, reference genome index, and optional regions of interest.
+
+The script allows users to choose the model type (WGS or WES) and specify the number of shards for parallel processing.
+
+Once the user has provided all the necessary inputs and clicked the "Run Script" button, the script generates a bash command to run the DeepVariant pipeline using the specified options.
+
+The script writes the generated bash command to a temporary file (bash_script.sh) and executes it using the subprocess module. This step involves pulling the DeepVariant GPU-enabled Docker container, running the container with the appropriate volume mounts, and executing the DeepVariant pipeline inside the container.
+
+The output VCF and gVCF files are written to the specified output directory, with filenames derived from the input BAM file.
 
 For further information, check here: Refer to https://github.com/google/deepvariant 
 # Requirements
