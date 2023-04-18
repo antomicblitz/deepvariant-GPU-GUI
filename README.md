@@ -1,6 +1,6 @@
 ![alt text](https://github.com/antomicblitz/deepvariant-GPU-GUI/blob/main/google-deep-variant-gui.PNG?raw=true)
 # google-deepvariant-GPU-GUI V1.0
-The script provides a graphical user interface (GUI) to run the DeepVariant pipeline using the GPU-enabled Docker container. The use of docker greatly simplifies the installation of dependencies and makes it possible to run the pipelines in just a few clocks. The GUI simplifies the process of specifying input files, output directories, reference genomes, and other options for running DeepVariant, making it more accessible to users without extensive command-line experience. 
+The script provides a graphical user interface (GUI) to run the DeepVariant pipeline using the GPU-enabled Docker container. The use of docker greatly simplifies the installation of dependencies and makes it possible to run the pipelines in just a few clicks. The GUI simplifies the process of specifying input files, output directories, reference genomes, and other options for running DeepVariant, making it more accessible to users without extensive command-line experience. 
 
 Here's a summary of the script's functionality:
 
