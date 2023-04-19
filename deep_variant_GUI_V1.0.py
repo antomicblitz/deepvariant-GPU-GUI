@@ -47,7 +47,6 @@ sudo docker run \
   --ref=/ref_files/{os.path.basename(ref_genome)} \
   --reads=/input/{os.path.basename(input_bam)} \
   --output_vcf=/output/{output_basename}.vcf.gz \
-  --output_gvcf=/output/{output_basename}.g.vcf.gz \
   --num_shards={num_shards} \
    {regions_flag}
 """
