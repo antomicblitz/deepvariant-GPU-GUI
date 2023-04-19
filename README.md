@@ -46,7 +46,7 @@ An aligned reads file in BAM format and its corresponding index file (.bai). You
 
 These files should be together in a directory that is specified in the GUI. **Make sure the .fa and .fai files have the same name.**
 
-Be aware that the uncompressed reference genome file (in this case hg38.fa) and index file (hg38.fa.fai) should be in the Index_Files folder within the working directory. If you don't have them already, the tool has the option to download them from UCSC, but you should make sure that they are same version you used for your alignment. If not, you can use "samtools faidx [yourfasta.fa]" to make your index file. If you used a different reference file, you need to make your own index or the script will fail. Just make sure they are both in the Index_Files directory.
+Be aware that for the reference genome, the FASTA file (in this case hg38.fa) and index file (hg38.fa.fai) should be uncompressed. If you don't have the index file, you can use "samtools faidx [yourfasta.fa]" to make your index file. You need to make sure you use the right index files.
 
 
 # Outputs
