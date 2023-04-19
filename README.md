@@ -76,11 +76,9 @@ Shards: In the context of the DeepVariant pipeline, shards refer to the division
 
 
 ## Regions
-Here you can specify which chromosome(s) or regions to perform the variant calling. Here are examples of valid arguments (remember to use without parantheses):
+Here you can specify which chromosome or region to perform the variant calling. Here are examples of valid arguments (remember to use without parantheses):
 "chr2" 
 "chr2:100000-120000"
-"chr1 chr2 chr3"
-etc. 
 
 Note, keep in mind that if your chromosome names are different in your indexed reference genome, you should use this naming convention instead. You can check in the index file. 
 
