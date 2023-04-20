@@ -22,7 +22,7 @@ In windows, you need to install Docker and WSL2, and Ubuntu for WSL2
 From Ubuntu, you need to run the following in a BASH terminal to install all dependencies:
 apt-get install python pip tkinter tqdm
 
-once these are installed, download this folder directly (or use the git command "git pull google-deepvariant-GUI) to download the folder.
+once these are installed, download this folder directly (or use "git clone") to download the folder.
 
 Tip: If you are running WSL2, make sure that you give enough RAM or the process might fail. By default, WSL2 only allocates 50% of the RAM. Follow this guide:https://fizzylogic.nl/2023/01/05/how-to-configure-memory-limits-in-wsl2#:~:text=Memory%20usage%20in%20WSL2&text=Memory%20is%20limited%20to%20half,and%20all%20CPU%2FGPU%20cores.
 
