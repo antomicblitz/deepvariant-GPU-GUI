@@ -93,3 +93,10 @@ Note, keep in mind that if your chromosome names are different in your indexed r
 
 If there are any issues, please contact:
 contact@lambconsulting.bio
+
+# Troubleshooting:
+If you get errors, like
+"docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]]"
+Try the following commands:
+sudo nvidia-ctk runtime configure --runtime=docker
+sudo systemctl restart docker
