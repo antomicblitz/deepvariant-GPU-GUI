@@ -16,15 +16,15 @@ The output VCF and gVCF files are written to the specified output directory, wit
 
 For further information, check here: Refer to https://github.com/google/deepvariant 
 # Requirements
+
+
+## Hardware
+Note that if your graphics card or CPU is not of similar magnitude to what is used by Google, it will struggle. 
 This comes straight from Google:
 call_variants uses around 4 GB per process and uses TensorFlow for evaluation. When evaluating a model in CPU mode, TensorFlow can make use of multiple cores, but scaling is sub-linear. In other words, call_variants on a 64 core machine is less than 8x faster than running on a 8 core machine.
 
 When using a GPU, call_variants is both faster, more efficient, and needs fewer CPUs. Based on a small number of experiments, currently the most efficient configuration for call_variants on a GPU instance is 4-8 CPUs and 1 GPU. Compared to our setting in the whole genome case study, we noticed a 2.5x speedup on the call_variants step using a single P100 GPU and 8 CPUs. Note that currently call_variants can only use one GPU at most. So it doesn't improve the speed if you get a multiple-GPU machine.
 
-Also note, that if you try to do more than a small section of a chromosome and you don't have a powerful computer like what google recommends, there is a good chance it will crash. 
-
-## Hardware
-Note that if your graphics card or CPU is not of similar magnitude to what is used by Google (i.e. 
 ## Windows
 In windows, you need to install Docker and WSL2, and Ubuntu for WSL2
 
